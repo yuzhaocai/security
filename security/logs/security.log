@@ -1,0 +1,461 @@
+2012-11-03 12:06:03,828 [main] WARN  [org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory] - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+2012-11-03 12:06:03,828 [main] WARN  [org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory] - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+2012-11-03 12:06:25,307 [qtp32582734-24] WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - SQL Error: 1146, SQLState: 42S02
+2012-11-03 12:06:25,307 [qtp32582734-24] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - Table 'security.security_user' doesn't exist
+2012-11-03 12:06:30,231 [qtp32582734-24] WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - SQL Error: 1146, SQLState: 42S02
+2012-11-03 12:06:30,231 [qtp32582734-24] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - Table 'security.security_user' doesn't exist
+2012-11-03 13:11:59,853 [main] WARN  [org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory] - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+2012-11-03 13:11:59,866 [main] WARN  [org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory] - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+2012-11-03 13:12:02,216 [main] ERROR [org.springframework.web.servlet.DispatcherServlet] - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'indexController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.ketayao.security.service.ModuleService com.ketayao.security.controller.IndexController.moduleService; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'moduleServiceImpl' defined in file [E:\快盘\workspace_dev\security\target\classes\com\ketayao\security\service\impl\ModuleServiceImpl.class]: Unsatisfied dependency expressed through constructor argument with index 0 of type [com.ketayao.security.dao.ModuleDao]: : Error creating bean with name 'moduleDao': FactoryBean threw exception on object creation; nested exception is org.springframework.data.mapping.PropertyReferenceException: No property find found for type com.ketayao.security.entity.main.Module; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'moduleDao': FactoryBean threw exception on object creation; nested exception is org.springframework.data.mapping.PropertyReferenceException: No property find found for type com.ketayao.security.entity.main.Module
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:287)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1106)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:609)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:469)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:631)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:588)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:645)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:508)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:449)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:133)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:241)
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:477)
+	at org.eclipse.jetty.servlet.ServletHolder.doStart(ServletHolder.java:293)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:739)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:254)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1238)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:683)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:480)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:275)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.ketayao.test.QuickStartServer.main(QuickStartServer.java:28)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.ketayao.security.service.ModuleService com.ketayao.security.controller.IndexController.moduleService; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'moduleServiceImpl' defined in file [E:\快盘\workspace_dev\security\target\classes\com\ketayao\security\service\impl\ModuleServiceImpl.class]: Unsatisfied dependency expressed through constructor argument with index 0 of type [com.ketayao.security.dao.ModuleDao]: : Error creating bean with name 'moduleDao': FactoryBean threw exception on object creation; nested exception is org.springframework.data.mapping.PropertyReferenceException: No property find found for type com.ketayao.security.entity.main.Module; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'moduleDao': FactoryBean threw exception on object creation; nested exception is org.springframework.data.mapping.PropertyReferenceException: No property find found for type com.ketayao.security.entity.main.Module
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:506)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:284)
+	... 30 more
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'moduleServiceImpl' defined in file [E:\快盘\workspace_dev\security\target\classes\com\ketayao\security\service\impl\ModuleServiceImpl.class]: Unsatisfied dependency expressed through constructor argument with index 0 of type [com.ketayao.security.dao.ModuleDao]: : Error creating bean with name 'moduleDao': FactoryBean threw exception on object creation; nested exception is org.springframework.data.mapping.PropertyReferenceException: No property find found for type com.ketayao.security.entity.main.Module; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'moduleDao': FactoryBean threw exception on object creation; nested exception is org.springframework.data.mapping.PropertyReferenceException: No property find found for type com.ketayao.security.entity.main.Module
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:730)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:196)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1035)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:939)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:269)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:876)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:818)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:735)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:478)
+	... 32 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'moduleDao': FactoryBean threw exception on object creation; nested exception is org.springframework.data.mapping.PropertyReferenceException: No property find found for type com.ketayao.security.entity.main.Module
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:149)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:102)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1442)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:248)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:876)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:818)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:735)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:723)
+	... 47 more
+Caused by: org.springframework.data.mapping.PropertyReferenceException: No property find found for type com.ketayao.security.entity.main.Module
+	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:74)
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:326)
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:352)
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:352)
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:352)
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:306)
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:270)
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:244)
+	at org.springframework.data.repository.query.parser.Part.<init>(Part.java:73)
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.<init>(PartTree.java:180)
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.buildTree(PartTree.java:260)
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.<init>(PartTree.java:240)
+	at org.springframework.data.repository.query.parser.PartTree.<init>(PartTree.java:68)
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:57)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:90)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:162)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:68)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.<init>(RepositoryFactorySupport.java:280)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:148)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.getObject(RepositoryFactoryBeanSupport.java:125)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.getObject(RepositoryFactoryBeanSupport.java:41)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:142)
+	... 56 more
+2012-11-03 13:12:02,225 [main] WARN  [/security] - unavailable
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'indexController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.ketayao.security.service.ModuleService com.ketayao.security.controller.IndexController.moduleService; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'moduleServiceImpl' defined in file [E:\快盘\workspace_dev\security\target\classes\com\ketayao\security\service\impl\ModuleServiceImpl.class]: Unsatisfied dependency expressed through constructor argument with index 0 of type [com.ketayao.security.dao.ModuleDao]: : Error creating bean with name 'moduleDao': FactoryBean threw exception on object creation; nested exception is org.springframework.data.mapping.PropertyReferenceException: No property find found for type com.ketayao.security.entity.main.Module; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'moduleDao': FactoryBean threw exception on object creation; nested exception is org.springframework.data.mapping.PropertyReferenceException: No property find found for type com.ketayao.security.entity.main.Module
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:287)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1106)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:609)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:469)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:631)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:588)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:645)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:508)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:449)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:133)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:241)
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:477)
+	at org.eclipse.jetty.servlet.ServletHolder.doStart(ServletHolder.java:293)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:739)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:254)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1238)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:683)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:480)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:275)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.ketayao.test.QuickStartServer.main(QuickStartServer.java:28)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.ketayao.security.service.ModuleService com.ketayao.security.controller.IndexController.moduleService; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'moduleServiceImpl' defined in file [E:\快盘\workspace_dev\security\target\classes\com\ketayao\security\service\impl\ModuleServiceImpl.class]: Unsatisfied dependency expressed through constructor argument with index 0 of type [com.ketayao.security.dao.ModuleDao]: : Error creating bean with name 'moduleDao': FactoryBean threw exception on object creation; nested exception is org.springframework.data.mapping.PropertyReferenceException: No property find found for type com.ketayao.security.entity.main.Module; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'moduleDao': FactoryBean threw exception on object creation; nested exception is org.springframework.data.mapping.PropertyReferenceException: No property find found for type com.ketayao.security.entity.main.Module
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:506)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:284)
+	... 30 more
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'moduleServiceImpl' defined in file [E:\快盘\workspace_dev\security\target\classes\com\ketayao\security\service\impl\ModuleServiceImpl.class]: Unsatisfied dependency expressed through constructor argument with index 0 of type [com.ketayao.security.dao.ModuleDao]: : Error creating bean with name 'moduleDao': FactoryBean threw exception on object creation; nested exception is org.springframework.data.mapping.PropertyReferenceException: No property find found for type com.ketayao.security.entity.main.Module; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'moduleDao': FactoryBean threw exception on object creation; nested exception is org.springframework.data.mapping.PropertyReferenceException: No property find found for type com.ketayao.security.entity.main.Module
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:730)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:196)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1035)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:939)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:269)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:876)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:818)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:735)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:478)
+	... 32 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'moduleDao': FactoryBean threw exception on object creation; nested exception is org.springframework.data.mapping.PropertyReferenceException: No property find found for type com.ketayao.security.entity.main.Module
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:149)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:102)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1442)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:248)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:876)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:818)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:735)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:723)
+	... 47 more
+Caused by: org.springframework.data.mapping.PropertyReferenceException: No property find found for type com.ketayao.security.entity.main.Module
+	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:74)
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:326)
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:352)
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:352)
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:352)
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:306)
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:270)
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:244)
+	at org.springframework.data.repository.query.parser.Part.<init>(Part.java:73)
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.<init>(PartTree.java:180)
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.buildTree(PartTree.java:260)
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.<init>(PartTree.java:240)
+	at org.springframework.data.repository.query.parser.PartTree.<init>(PartTree.java:68)
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:57)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:90)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:162)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:68)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.<init>(RepositoryFactorySupport.java:280)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:148)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.getObject(RepositoryFactoryBeanSupport.java:125)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.getObject(RepositoryFactoryBeanSupport.java:41)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:142)
+	... 56 more
+2012-11-03 13:14:52,698 [main] WARN  [org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory] - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+2012-11-03 13:14:52,711 [main] WARN  [org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory] - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+2012-11-03 13:16:59,243 [main] WARN  [org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory] - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+2012-11-03 13:16:59,247 [main] WARN  [org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory] - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+2012-11-03 13:28:34,533 [main] WARN  [org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory] - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+2012-11-03 13:28:34,546 [main] WARN  [org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory] - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+2012-11-03 13:32:01,757 [main] WARN  [org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory] - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+2012-11-03 13:32:01,761 [main] WARN  [org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory] - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+2012-11-03 13:33:37,463 [qtp27770641-24] WARN  [org.eclipse.jetty.servlet.ServletHandler] - /security/management/security/user/lookup2org
+org.apache.jasper.JasperException: PWC6033: Error in Javac compilation for JSP
+
+PWC6199: Generated servlet error:
+string:///lookup_005forg_jsp.java:6: 软件包 com.ygsoft.security.entity.main 不存在
+
+PWC6197: An error occurred at line: 5 in the jsp file: /WEB-INF/views/management/security/user/lookup_org.jsp
+PWC6199: Generated servlet error:
+string:///lookup_005forg_jsp.java:13: 找不到符号
+符号： 类 Organization
+位置： 类 org.apache.jsp.WEB_002dINF.views.management.security.user.lookup_005forg_jsp
+
+PWC6197: An error occurred at line: 5 in the jsp file: /WEB-INF/views/management/security/user/lookup_org.jsp
+PWC6199: Generated servlet error:
+string:///lookup_005forg_jsp.java:19: 找不到符号
+符号： 类 Organization
+位置： 类 org.apache.jsp.WEB_002dINF.views.management.security.user.lookup_005forg_jsp
+
+PWC6197: An error occurred at line: 21 in the jsp file: /WEB-INF/views/management/security/user/lookup_org.jsp
+PWC6199: Generated servlet error:
+string:///lookup_005forg_jsp.java:71: 找不到符号
+符号： 类 Organization
+位置： 类 org.apache.jsp.WEB_002dINF.views.management.security.user.lookup_005forg_jsp
+
+PWC6197: An error occurred at line: 21 in the jsp file: /WEB-INF/views/management/security/user/lookup_org.jsp
+PWC6199: Generated servlet error:
+string:///lookup_005forg_jsp.java:71: 找不到符号
+符号： 类 Organization
+位置： 类 org.apache.jsp.WEB_002dINF.views.management.security.user.lookup_005forg_jsp
+
+PWC6199: Generated servlet error:
+注意：string:///lookup_005forg_jsp.java from  使用了未经检查或不安全的操作。
+
+PWC6199: Generated servlet error:
+注意：要了解详细信息，请使用 -Xlint:unchecked 重新编译。
+
+
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:126)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:296)
+	at org.apache.jasper.compiler.Compiler.generateClass(Compiler.java:372)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:433)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:608)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:374)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:476)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:366)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:447)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1038)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:374)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:189)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:972)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:293)
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:120)
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:238)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:262)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1180)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:950)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:852)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:882)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:778)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:652)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1329)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:259)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1300)
+	at org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter.doFilterInternal(OpenEntityManagerInViewFilter.java:147)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1300)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1300)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:445)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:559)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1038)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:374)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:189)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:972)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:363)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:483)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:920)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:982)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:635)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:627)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:51)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-03 13:33:37,616 [qtp27770641-24] ERROR [500.jsp] - PWC6033: Error in Javac compilation for JSP
+
+PWC6199: Generated servlet error:
+string:///lookup_005forg_jsp.java:6: 软件包 com.ygsoft.security.entity.main 不存在
+
+PWC6197: An error occurred at line: 5 in the jsp file: /WEB-INF/views/management/security/user/lookup_org.jsp
+PWC6199: Generated servlet error:
+string:///lookup_005forg_jsp.java:13: 找不到符号
+符号： 类 Organization
+位置： 类 org.apache.jsp.WEB_002dINF.views.management.security.user.lookup_005forg_jsp
+
+PWC6197: An error occurred at line: 5 in the jsp file: /WEB-INF/views/management/security/user/lookup_org.jsp
+PWC6199: Generated servlet error:
+string:///lookup_005forg_jsp.java:19: 找不到符号
+符号： 类 Organization
+位置： 类 org.apache.jsp.WEB_002dINF.views.management.security.user.lookup_005forg_jsp
+
+PWC6197: An error occurred at line: 21 in the jsp file: /WEB-INF/views/management/security/user/lookup_org.jsp
+PWC6199: Generated servlet error:
+string:///lookup_005forg_jsp.java:71: 找不到符号
+符号： 类 Organization
+位置： 类 org.apache.jsp.WEB_002dINF.views.management.security.user.lookup_005forg_jsp
+
+PWC6197: An error occurred at line: 21 in the jsp file: /WEB-INF/views/management/security/user/lookup_org.jsp
+PWC6199: Generated servlet error:
+string:///lookup_005forg_jsp.java:71: 找不到符号
+符号： 类 Organization
+位置： 类 org.apache.jsp.WEB_002dINF.views.management.security.user.lookup_005forg_jsp
+
+PWC6199: Generated servlet error:
+注意：string:///lookup_005forg_jsp.java from  使用了未经检查或不安全的操作。
+
+PWC6199: Generated servlet error:
+注意：要了解详细信息，请使用 -Xlint:unchecked 重新编译。
+
+
+org.apache.jasper.JasperException: PWC6033: Error in Javac compilation for JSP
+
+PWC6199: Generated servlet error:
+string:///lookup_005forg_jsp.java:6: 软件包 com.ygsoft.security.entity.main 不存在
+
+PWC6197: An error occurred at line: 5 in the jsp file: /WEB-INF/views/management/security/user/lookup_org.jsp
+PWC6199: Generated servlet error:
+string:///lookup_005forg_jsp.java:13: 找不到符号
+符号： 类 Organization
+位置： 类 org.apache.jsp.WEB_002dINF.views.management.security.user.lookup_005forg_jsp
+
+PWC6197: An error occurred at line: 5 in the jsp file: /WEB-INF/views/management/security/user/lookup_org.jsp
+PWC6199: Generated servlet error:
+string:///lookup_005forg_jsp.java:19: 找不到符号
+符号： 类 Organization
+位置： 类 org.apache.jsp.WEB_002dINF.views.management.security.user.lookup_005forg_jsp
+
+PWC6197: An error occurred at line: 21 in the jsp file: /WEB-INF/views/management/security/user/lookup_org.jsp
+PWC6199: Generated servlet error:
+string:///lookup_005forg_jsp.java:71: 找不到符号
+符号： 类 Organization
+位置： 类 org.apache.jsp.WEB_002dINF.views.management.security.user.lookup_005forg_jsp
+
+PWC6197: An error occurred at line: 21 in the jsp file: /WEB-INF/views/management/security/user/lookup_org.jsp
+PWC6199: Generated servlet error:
+string:///lookup_005forg_jsp.java:71: 找不到符号
+符号： 类 Organization
+位置： 类 org.apache.jsp.WEB_002dINF.views.management.security.user.lookup_005forg_jsp
+
+PWC6199: Generated servlet error:
+注意：string:///lookup_005forg_jsp.java from  使用了未经检查或不安全的操作。
+
+PWC6199: Generated servlet error:
+注意：要了解详细信息，请使用 -Xlint:unchecked 重新编译。
+
+
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:126)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:296)
+	at org.apache.jasper.compiler.Compiler.generateClass(Compiler.java:372)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:433)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:608)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:374)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:476)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:366)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:447)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1038)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:374)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:189)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:972)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:293)
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:120)
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:238)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:262)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1180)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:950)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:852)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:882)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:778)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:652)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1329)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:259)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1300)
+	at org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter.doFilterInternal(OpenEntityManagerInViewFilter.java:147)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1300)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1300)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:445)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:559)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1038)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:374)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:189)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:972)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:363)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:483)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:920)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:982)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:635)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:627)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:51)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-03 13:34:45,295 [main] WARN  [org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory] - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+2012-11-03 13:34:45,299 [main] WARN  [org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory] - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
